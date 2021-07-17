@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".formulario2.MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="77dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="188dp"
+            android:gravity="center"
+            android:text="Formulario" />
+
+        <EditText
+            android:id="@+id/nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/apellido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Apellido"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Fecha de nacimiento"
+            android:inputType="text" />
+
+        <TableRow
+            android:layout_width="200dp"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:id="@+id/hombre"
+                android:layout_width="97dp"
+                android:layout_height="45dp"
+                android:text="Hombre" />
+
+            <CheckBox
+                android:id="@+id/mujer"
+                android:layout_width="105dp"
+                android:layout_height="48dp"
+                android:text="Mujer" />
+        </TableRow>
+
+        <Button
+            android:id="@+id/enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enviar" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
